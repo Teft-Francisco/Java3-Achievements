@@ -10,29 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed39d8d8-eac5-4876-a415-796c4bcb8a21" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/azure/resource-connections.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/francisco/MainServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/francisco/commendations/Commendation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/francisco/commendations/CommendationsServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/francisco/data/CommendationDAO_MySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/francisco/data/DAO_MySQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/francisco/data/UserDAO_MYSQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/francisco/users/AddUserServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/francisco/users/LoginServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/francisco/users/LogoutServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/francisco/users/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/users/add-user.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/users/login.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/commendations.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/styles/nav.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -365,7 +343,7 @@
       <workItem from="1680716477048" duration="3458000" />
       <workItem from="1681149679390" duration="2785000" />
       <workItem from="1681753717949" duration="16911000" />
-      <workItem from="1682366054896" duration="765000" />
+      <workItem from="1682366054896" duration="1074000" />
     </task>
     <servers />
   </component>
@@ -388,47 +366,47 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp</url>
-          <line>39</line>
+          <line>38</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp</url>
-          <line>42</line>
+          <line>41</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp</url>
-          <line>45</line>
+          <line>44</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp</url>
-          <line>46</line>
+          <line>45</line>
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp</url>
-          <line>47</line>
+          <line>46</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp</url>
-          <line>48</line>
+          <line>47</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp</url>
-          <line>49</line>
+          <line>48</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp</url>
-          <line>52</line>
+          <line>51</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp</url>
-          <line>36</line>
+          <line>35</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>

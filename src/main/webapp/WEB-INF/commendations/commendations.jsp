@@ -2,7 +2,6 @@
 <%@ page import="com.francisco.commendations.Commendation" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.Arrays" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
     List<Commendation> commendations = (List<Commendation>)request.getAttribute("commendations");
     String show = "?show=" + (String)request.getAttribute("show");
