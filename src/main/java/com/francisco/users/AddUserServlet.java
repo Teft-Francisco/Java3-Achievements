@@ -77,7 +77,7 @@ public class AddUserServlet extends HttpServlet {
             }
         }
         request.setAttribute("results", results);
-        request.getRequestDispatcher("WEB-INF/ch5/add-user.jsp").forward(request, response);
+        request.getRequestDispatcher("WEB-INF/users/add-user.jsp").forward(request, response);
     }
 }
 

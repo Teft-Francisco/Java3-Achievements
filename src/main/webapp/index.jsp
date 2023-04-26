@@ -21,7 +21,6 @@
     <li><a href="signup">Register User</a></li>
     <li><a href="login">Login</a></li>
     <% } else { %>
-    <li><a href="profile">View Profile</a></li>
     <li><a href="logout">Logout</a></li>
     <% } %>
 </ul>

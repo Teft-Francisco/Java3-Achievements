@@ -28,7 +28,7 @@ public class LoginServlet extends HttpServlet {
                 user == null
         ) {
             request.setAttribute("loginFailed", true);
-            request.getRequestDispatcher("WEB-INF/ch5/login.jsp").forward(request, response);
+            request.getRequestDispatcher("WEB-INF/users/login.jsp").forward(request, response);
             return;
         } else {
             // User was found
@@ -43,7 +43,7 @@ public class LoginServlet extends HttpServlet {
             } else {
                 // Not match
                 request.setAttribute("loginFailed", true);
-                request.getRequestDispatcher("WEB-INF/ch5/login.jsp").forward(request, response);
+                request.getRequestDispatcher("WEB-INF/users/login.jsp").forward(request, response);
                 return;
             }
         }

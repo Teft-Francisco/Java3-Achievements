@@ -1,7 +1,6 @@
 package com.francisco.commendations;
 
 import com.francisco.data.CommendationDAO_MySQL;
-import com.francisco.data.DAO_MySQL;
 
 import javax.servlet.*;
 import javax.servlet.http.*;
@@ -36,7 +35,7 @@ public class CommendationsServlet extends HttpServlet {
 
         if(!show.equalsIgnoreCase("all")) {
             String showTemp = show;
-            String finalShow = showTemp.replaceAll("\\+", " "); // an effectively final variable that can be used with a lambda expression
+            String finalShow = showTemp.replaceAll("\\+", " ");
             commendationsCopy.removeIf(commendation -> !commendation.getFaction().equals(finalShow));
         }
 
@@ -66,11 +65,28 @@ public class CommendationsServlet extends HttpServlet {
         request.setAttribute("sort", sort);
         // request.setAttribute("commendations", commendations);
         request.setAttribute("commendations", commendationsCopy);
-        request.getRequestDispatcher("/WEB-INF/commendations/commendations.jsp").forward(request, response);
+        request.getRequestDispatcher("WEB-INF/commendations/commendations.jsp").forward(request, response);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        CommendationDAO_MySQL commendation_data = new CommendationDAO_MySQL();
+        if(commendations == null) {
+            commendations = commendation_data.getAll();
+        }
+        String btnAction = request.getParameter("btn");
+        if (btnAction.equals("delete")) {
+            commendation_data.delete(request.getParameter("title"));
+        }
+        if (btnAction.equals("edit")) {
+            String commendationToEdit = request.getParameter("title");
+            Commendation commendationToSend = commendation_data.get(commendationToEdit);
+            request.setAttribute("commendationToSend",commendationToSend);
+            request.getRequestDispatcher("/WEB-INF/commendations/edit-commendation.jsp").forward(request, response);
+            return;
+        }
+        commendations = commendation_data.getAll();
+        request.setAttribute("commendations", commendations);
         request.getRequestDispatcher("/WEB-INF/commendations/commendations.jsp").forward(request, response);
     }
 }

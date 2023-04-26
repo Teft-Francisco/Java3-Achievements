@@ -22,8 +22,8 @@ public interface DAO_MySQL<T> {
         } catch(ClassNotFoundException e) {
             // what to do if the driver is not found
         }
-        // String url = String.format("jdbc:%s://%s%s:%s/%s?%s",
-        String url = String.format("jdbc:%s://%s.%s:%s/%s?%s",
+        String url = String.format("jdbc:%s://%s%s:%s/%s?%s",
+        //String url = String.format("jdbc:%s://%s.%s:%s/%s?%s",
                 db_driver, db_server_name, db_host, db_port, db_schema, db_properties);
         System.out.println(url);
         Connection myDbConn = DriverManager.getConnection(url, db_user, db_password);

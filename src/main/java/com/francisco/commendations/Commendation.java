@@ -15,6 +15,10 @@ public class Commendation implements Comparable<Commendation>, Cloneable{
         this.faction = faction;
     }
 
+    public Commendation() {
+
+    }
+
     public String getTitle() {
         return title;
     }

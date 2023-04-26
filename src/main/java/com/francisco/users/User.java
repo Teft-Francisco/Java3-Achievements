@@ -124,7 +124,7 @@ public class User {
     }
 
     public void setRoles(String roles) {
-        if(!roles.equals("none") && !roles.equals("editor") && !roles.equals("admin") && !roles.equals("premium")) {
+        if(!roles.equals("none") && !roles.equals("user") && !roles.equals("admin")) {
             throw new IllegalArgumentException("Invalid roles");
         }
         this.roles = roles;
