@@ -2,7 +2,7 @@
 <%@ page import="com.francisco.users.User" %>
 <% User user = (User)session.getAttribute("user"); %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <title>Commendation Catalog</title>
 </head>

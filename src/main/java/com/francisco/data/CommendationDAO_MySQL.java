@@ -1,8 +1,6 @@
 package com.francisco.data;
 
 import com.francisco.commendations.Commendation;
-import com.francisco.users.User;
-import org.mindrot.jbcrypt.BCrypt;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -85,8 +83,7 @@ public class CommendationDAO_MySQL implements DAO_MySQL<Commendation>{
         int numRowsAffected = 0;
         try(Connection connection = getConnection()) {
             if(connection.isValid(2)) {
-                String sql = "UPDATE commendations SET (title = ?, description = ?, requirements = ?, faction = ?)" +
-                        "WHERE title = ?";
+                String sql = "UPDATE commendations SET title = ?, description = ?, requirements = ?, faction = ? WHERE title = ?";
                 PreparedStatement statement = connection.prepareStatement(sql);
                 statement.setString(1, title);
                 statement.setString(2, description);

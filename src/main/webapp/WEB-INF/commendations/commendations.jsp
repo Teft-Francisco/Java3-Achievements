@@ -10,8 +10,10 @@
     String sort = "&sort=" + (String)request.getAttribute("sort");
     String search = (String)request.getAttribute("search");
     User user = (User)session.getAttribute("user");
+//    String errorMessage = (String)request.getAttribute("errorMessage");
 %>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,7 +25,7 @@
 <header class="bg-primary">
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand text-light" href="#">Commendation List</a>
+            <a class="navbar-brand text-light" href="">Commendation List</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -67,6 +69,11 @@
                 </div>
             </div>
         </section>
+<%--        <% if(errorMessage != "" || errorMessage != null) { %>--%>
+<%--        <div class="alert alert-danger" role="alert">--%>
+<%--            <%= errorMessage.toString() %>--%>
+<%--        </div>--%>
+<%--        <% } %>--%>
         <table class="table">
             <thead>
             <tr>
@@ -92,11 +99,9 @@
                     <p><%= commendation.getDescription() %></p>
                 </td>
                 <td>
-                    <p><%= commendation.getRequirements()[0] %></p>
-                    <p><%= commendation.getRequirements()[1] %></p>
-                    <p><%= commendation.getRequirements()[2] %></p>
-                    <p><%= commendation.getRequirements()[3] %></p>
-                    <p><%= commendation.getRequirements()[4] %></p>
+                    <% for (int i = 0; i < commendation.getRequirements().length; i++) { %>
+                        <p><%= commendation.getRequirements()[i] %></p>
+                    <% } %>
                 </td>
                 <td>
                     <p><%= commendation.getFaction() %></p>
@@ -105,7 +110,7 @@
                 <td>
                     <form action="commendations" method="post">
                         <input type="hidden" name="btn" value="edit">
-                        <input type="hidden" name="commendationToEdit" value="<%= commendation %>">
+                        <input type="hidden" name="title" value="<%= commendation.getTitle() %>">
                         <button type="submit">Edit Commendation</button>
                     </form>
                 </td>

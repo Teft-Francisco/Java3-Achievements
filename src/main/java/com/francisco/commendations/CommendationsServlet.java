@@ -15,9 +15,9 @@ public class CommendationsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         CommendationDAO_MySQL commendation_data = new CommendationDAO_MySQL();
-        if(commendations == null) {
-            commendations = commendation_data.getAll();
-        }
+
+        commendations = commendation_data.getAll();
+
         // https://stackoverflow.com/questions/715650/how-to-clone-arraylist-and-also-clone-its-contents
         List<Commendation> commendationsCopy = new ArrayList<>(commendations.size());
         for(Commendation commendation: commendations) {
@@ -59,7 +59,6 @@ public class CommendationsServlet extends HttpServlet {
         } else {
             search = "";
         }
-
         request.setAttribute("search", search);
         request.setAttribute("show", show);
         request.setAttribute("sort", sort);
@@ -71,9 +70,7 @@ public class CommendationsServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         CommendationDAO_MySQL commendation_data = new CommendationDAO_MySQL();
-        if(commendations == null) {
-            commendations = commendation_data.getAll();
-        }
+        commendations = commendation_data.getAll();
         String btnAction = request.getParameter("btn");
         if (btnAction.equals("delete")) {
             commendation_data.delete(request.getParameter("title"));

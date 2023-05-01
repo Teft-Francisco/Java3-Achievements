@@ -1,2 +1,9 @@
-.titlefield {margin: auto}
-.requirementsfield { width: 90px; height: 390px; padding: 5px; margin: auto}
+input {
+    writing-mode: horizontal-tb !important;
+    width: 300px;
+    height: 200px;
+    text-wrap: normal;
+    margin: 0em 1em 0em 1em;
+    padding: 1px 2px;
+    border-width: 2px;
+}
