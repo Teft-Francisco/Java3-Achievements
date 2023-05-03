@@ -10,17 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ed39d8d8-eac5-4876-a415-796c4bcb8a21" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3de36f2e-a5df-4024-a5d7-30ecfdd9281f.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3de36f2e-a5df-4024-a5d7-30ecfdd9281f.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/francisco/commendations/CommendationsServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/francisco/commendations/CommendationsServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/francisco/commendations/EditCommendationServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/francisco/commendations/EditCommendationServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/francisco/data/CommendationDAO_MySQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/francisco/data/CommendationDAO_MySQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/commendations.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/edit-commendation.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/commendations/edit-commendation.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/styles/edit.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/styles/edit.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -356,7 +346,8 @@
       <workItem from="1681753717949" duration="16911000" />
       <workItem from="1682366054896" duration="4554000" />
       <workItem from="1682530057500" duration="13471000" />
-      <workItem from="1682961656891" duration="13988000" />
+      <workItem from="1682961656891" duration="14289000" />
+      <workItem from="1683134230663" duration="397000" />
     </task>
     <servers />
   </component>
